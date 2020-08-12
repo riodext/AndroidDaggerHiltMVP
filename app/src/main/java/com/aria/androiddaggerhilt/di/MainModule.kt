@@ -6,6 +6,7 @@ import com.aria.androiddaggerhilt.MainContract
 import com.aria.androiddaggerhilt.MainPresenter
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 
@@ -20,4 +21,15 @@ abstract class MainModule {
 
     @Binds
     abstract fun bindPresenter(impl: MainPresenter): MainContract.Presenter
+
+}
+
+@InstallIn(ActivityComponent::class)
+@Module
+object MainActivityModule {
+
+    @Provides
+    fun bindActivity(activity: AppCompatActivity): MainActivity {
+        return activity as MainActivity
+    }
 }
