@@ -13,6 +13,10 @@ import dagger.hilt.android.components.ActivityComponent
 @Module
 abstract class MainModule {
 
+    /* Before I had:
+    @Binds
+    abstract fun bindActivity(activity: MainActivity): MainContract.View
+    */
     @Binds
     abstract fun bindActivity(activity: AppCompatActivity): MainActivity
 
