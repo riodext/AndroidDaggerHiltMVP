@@ -3,7 +3,7 @@ package com.aria.androiddaggerhilt
 interface MainContract {
 
     interface View {
-        fun showList()
+        fun showWelcomeMessage(welcomeMessage: WelcomeMessage)
     }
 
     interface Presenter {
