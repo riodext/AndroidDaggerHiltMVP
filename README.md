@@ -1,7 +1,10 @@
 # Android Dagger Hilt MVP
 
+![Alt text](/screenshots/components.png?raw=true "Optional Title")
+
+
 This project is to show how to implement a Model View Presenter (MVP) using Dagger Hilt since all Hilt examples use Android ViewModel and LiveData.
 
-Using last Dagger Hilt release:
-```` kotlin
+:information_source:   Using last Dagger Hilt release:
+```` xml
 com.google.dagger:hilt-android:2.28.3-alpha
