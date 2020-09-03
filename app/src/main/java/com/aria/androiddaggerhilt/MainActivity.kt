@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun showWelcomeMessage(welcomeMessage: WelcomeMessage) {
         binding.welcomeMessageTitle.text = welcomeMessage.title
-        binding.welcomeMessageTitleModule.text = imageLoader.getMessage()
+        imageLoader.load(
+            "https://www.techyourchance.com/wp-content/uploads/2020/06/dagger_hilt.jpeg",
+            binding.welcomeMessageImageView
+        )
     }
 }
