@@ -1,9 +1,9 @@
 package com.aria.androiddaggerhilt
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.aria.androiddaggerhilt.databinding.ActivityMainBinding
+import com.aria.imagesloader.exposed.ImageLoader
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     @Inject
     lateinit var presenter: MainContract.Presenter
 
+    @Inject
+    lateinit var imageLoader: ImageLoader
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -25,5 +28,6 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun showWelcomeMessage(welcomeMessage: WelcomeMessage) {
         binding.welcomeMessageTitle.text = welcomeMessage.title
+        binding.welcomeMessageTitleModule.text = imageLoader.getMessage()
     }
 }
