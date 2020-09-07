@@ -5,6 +5,8 @@ buildscript {
     ext.junit_version = "5.6.0"
     ext.mockito_core_version = "3.2.4"
     ext.mockito_kotlin_version = "2.2.0"
+    ext.retrofit_version = "2.9.0"
+    ext.ok_http_version = "4.8.0"
     repositories {
         google()
         jcenter()

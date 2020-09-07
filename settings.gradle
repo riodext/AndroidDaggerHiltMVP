@@ -1,3 +1,4 @@
+include ':network'
 include ':imagesloader'
 include ':app'
 rootProject.name = "AndroidDaggerHilt"
