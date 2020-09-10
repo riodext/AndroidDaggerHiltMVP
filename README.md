@@ -9,4 +9,4 @@ This project is to show how to implement a Model View Presenter (MVP) using Dagg
 
 :information_source:   Using last Dagger Hilt release:
 ```` xml
-com.google.dagger:hilt-android:2.28.3-alpha
+com.google.dagger:hilt-android:2.29-alpha

@@ -12,7 +12,6 @@ internal class GlideImageLoaderImpl @Inject constructor(
 ) : ImageLoader {
 
     override fun load(url: String, imageView: ImageView) {
-
         Glide.with(context)
             .load(url)
             .centerCrop()
