@@ -1,5 +1,9 @@
 package com.aria.androiddaggerhilt
 
+import com.aria.androiddaggerhilt.contract.MainContract
+import com.aria.androiddaggerhilt.data.GetWelcomeMessageDataSource
+import com.aria.androiddaggerhilt.model.WelcomeMessage
+import com.aria.androiddaggerhilt.presenter.MainPresenter
 import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.mock
