@@ -1,16 +1,22 @@
 package com.aria.imagesloader.di
 
+import com.aria.imagesloader.CoilImageLoaderImpl
 import com.aria.imagesloader.GlideImageLoaderImpl
 import com.aria.imagesloader.exposed.ImageLoader
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.components.ActivityComponent
 
-@InstallIn(ApplicationComponent::class)
+@InstallIn(ActivityComponent::class)
 @Module
 internal abstract class ImageLoaderModule {
 
     @Binds
-    abstract fun bindImageLoader(impl: GlideImageLoaderImpl): ImageLoader
+    @GlideImageLoader
+    abstract fun bindGlideImageLoader(impl: GlideImageLoaderImpl): ImageLoader
+
+    @Binds
+    @CoilImageLoader
+    abstract fun bindCoilImageLoader(impl: CoilImageLoaderImpl): ImageLoader
 }

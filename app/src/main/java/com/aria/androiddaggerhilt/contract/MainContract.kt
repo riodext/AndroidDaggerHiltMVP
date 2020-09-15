@@ -1,4 +1,6 @@
-package com.aria.androiddaggerhilt
+package com.aria.androiddaggerhilt.contract
+
+import com.aria.androiddaggerhilt.model.WelcomeMessage
 
 interface MainContract {
 

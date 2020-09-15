@@ -1,6 +1,6 @@
-package com.aria.imagesloader
+package com.aria.scopedscreen
 
-import org.junit.Assert.assertEquals
+import org.junit.Assert.*
 import org.junit.Test
 
 /**

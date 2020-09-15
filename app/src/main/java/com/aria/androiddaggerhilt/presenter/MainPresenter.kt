@@ -1,5 +1,7 @@
-package com.aria.androiddaggerhilt
+package com.aria.androiddaggerhilt.presenter
 
+import com.aria.androiddaggerhilt.data.GetWelcomeMessageDataSource
+import com.aria.androiddaggerhilt.contract.MainContract
 import javax.inject.Inject
 
 class MainPresenter @Inject constructor(
