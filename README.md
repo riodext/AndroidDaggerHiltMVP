@@ -16,3 +16,6 @@ com.google.dagger:hilt-android:2.29.1-alpha
 * Networking module
 * UI testing
 * More scoped modules
+
+## Contributors 🍺
+Special thanks to @joancolmenerodev!
