@@ -4,10 +4,10 @@ This project is to show how to implement a Model View Presenter (MVP) using Dagg
 
 ![alt text](https://img.shields.io/badge/build-passing-green)
 
-## Components
+## Components 📦
 ![Alt text](/screenshots/v2.0.png?raw=true "Optional Title")
 
-:information_source:   Using last Dagger Hilt release:
+## Current Hilt Release ⚙️
 ```` xml
 com.google.dagger:hilt-android:2.29.1-alpha
 ````
