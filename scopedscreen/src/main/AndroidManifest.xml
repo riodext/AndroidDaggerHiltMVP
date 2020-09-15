@@ -3,7 +3,7 @@
     package="com.aria.scopedscreen">
 
     <application>
-        <activity android:name=".ScopedActivity"></activity>
+        <activity android:name=".view.HiltSummaryActivity"></activity>
     </application>
 
 </manifest>

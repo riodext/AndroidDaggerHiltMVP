@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidDaggerHilt</string>
+    <string name="go_to_details">View Hilt Summary</string>
 </resources>
