@@ -1,11 +1,7 @@
 package com.aria.androiddaggerhilt.di
 
 import android.app.Activity
-import com.aria.androiddaggerhilt.GetWelcomeMessageDataSource
-import com.aria.androiddaggerhilt.GetWelcomeMessageDataSourceImpl
-import com.aria.androiddaggerhilt.MainActivity
-import com.aria.androiddaggerhilt.MainContract
-import com.aria.androiddaggerhilt.MainPresenter
+import com.aria.androiddaggerhilt.*
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -22,10 +18,17 @@ abstract class MainModule {
     @Binds
     abstract fun bindPresenter(impl: MainPresenter): MainContract.Presenter
 
+}
+
+@InstallIn(ActivityComponent::class)
+@Module
+abstract class WelcomeMessageDataSourceModule {
+
     @Binds
     abstract fun bindDataSource(
         impl: GetWelcomeMessageDataSourceImpl
     ): GetWelcomeMessageDataSource
+
 }
 
 @InstallIn(ActivityComponent::class)
