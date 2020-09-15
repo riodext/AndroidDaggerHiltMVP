@@ -1,3 +1,4 @@
+include ':scopedscreen'
 include ':imagesloader'
 include ':app'
 rootProject.name = "AndroidDaggerHilt"

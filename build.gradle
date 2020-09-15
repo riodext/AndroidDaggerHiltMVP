@@ -6,6 +6,8 @@ buildscript {
     ext.mockito_core_version = "3.2.4"
     ext.mockito_kotlin_version = "2.2.0"
     ext.constraint_layout_version = "2.0.1"
+    ext.app_compat_version = "1.2.0"
+    ext.core_version = "1.3.1"
 
     repositories {
         google()
