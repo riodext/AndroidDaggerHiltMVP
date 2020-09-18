@@ -1,5 +1,6 @@
 package com.aria.androiddaggerhilt
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.aria.androiddaggerhilt.contract.MainContract
@@ -7,6 +8,7 @@ import com.aria.androiddaggerhilt.databinding.ActivityMainBinding
 import com.aria.androiddaggerhilt.model.WelcomeMessage
 import com.aria.imagesloader.di.CoilImageLoader
 import com.aria.imagesloader.exposed.ImageLoader
+import com.aria.scopedscreen.view.HiltSummaryActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -28,6 +30,13 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         setContentView(binding.root)
 
         presenter.onViewCreated()
+        setupHiltSummaryButton()
+    }
+
+    private fun setupHiltSummaryButton() {
+        binding.viewSummaryButton.setOnClickListener {
+            startActivity(Intent(this, HiltSummaryActivity::class.java))
+        }
     }
 
     override fun showWelcomeMessage(welcomeMessage: WelcomeMessage) {
