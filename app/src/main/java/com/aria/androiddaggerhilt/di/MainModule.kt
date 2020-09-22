@@ -22,10 +22,17 @@ abstract class MainModule {
     @Binds
     abstract fun bindPresenter(impl: MainPresenter): MainContract.Presenter
 
+}
+
+@InstallIn(ActivityComponent::class)
+@Module
+abstract class WelcomeMessageDataSourceModule {
+
     @Binds
     abstract fun bindDataSource(
         impl: GetWelcomeMessageDataSourceImpl
     ): GetWelcomeMessageDataSource
+
 }
 
 @InstallIn(ActivityComponent::class)
