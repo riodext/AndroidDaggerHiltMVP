@@ -13,9 +13,9 @@ com.google.dagger:hilt-android:2.29.1-alpha
 ````
 
 ## Incomming... 🛠️
-* Networking module
-* UI testing
-* More scoped modules
+* Migrate to Hilt 2.30.1
+* Non Android library Module using the new hilt-core
+* Standalone scoped screen feature module
 
 ## Contributors 🍺
 Special thanks to @joancolmenerodev!
