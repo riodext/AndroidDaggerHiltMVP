@@ -23,7 +23,6 @@ class MainActivityBindValueTest : BaseUiTest<MainActivity>() {
     private val welcomeMessageDataSource = WelcomeMessageDataSourceTest()
 
     @BindValue
-    @JvmField
     val feature: GetWelcomeMessageDataSource = welcomeMessageDataSource
 
     @get:Rule
